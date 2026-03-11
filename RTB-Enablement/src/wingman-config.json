@@ -1,0 +1,718 @@
+{
+  "colors": {
+    "bg": "#0f0e0c",
+    "surface": "#1a1814",
+    "surfaceAlt": "#222018",
+    "border": "#2e2b24",
+    "borderLight": "#3d3930",
+    "green": "#7cfc5e",
+    "greenDim": "#4db83a",
+    "greenGlow": "rgba(124,252,94,0.15)",
+    "greenGlow2": "rgba(124,252,94,0.07)",
+    "text": "#f0ece4",
+    "textMuted": "#9a9284",
+    "textDim": "#6b6459",
+    "warmWhite": "#f5f1e8"
+  },
+
+  "greeting": "Hello! I'm Wingman, your intelligent sales assistant. I'm here to help you engage with prospects and customers effectively. What would you like help with today?",
+
+  "options": [
+    {
+      "label": "Net New Prospect",
+      "icon": "🎯",
+      "subtitle": "Engage and qualify a brand-new lead",
+      "key": "net_new"
+    },
+    {
+      "label": "Current Customer",
+      "icon": "🤝",
+      "subtitle": "Support, upsell, or expand an existing account",
+      "key": "current"
+    },
+    {
+      "label": "Existing Prospect",
+      "icon": "🔄",
+      "subtitle": "Re-engage or advance a prospect in your pipeline",
+      "key": "existing"
+    },
+    {
+      "label": "Ask a Question",
+      "icon": "💬",
+      "subtitle": "Ask Wingman anything about sales, Higharc, or your deals",
+      "key": "ask_question"
+    }
+  ],
+
+  "bgCriteria": {
+    "volume": {
+      "label": "Volume (HPY)",
+      "bg1": "50–350",
+      "bg2": "100–750",
+      "bg3": "1,000+"
+    },
+    "plans": {
+      "label": "Design/Plans",
+      "bg1": "Simple, high reuse",
+      "bg2": "Low reuse, high detail",
+      "bg3": "High reuse, multi-market"
+    },
+    "purchasing": {
+      "label": "Purchasing",
+      "bg1": "Lump sum, low expect",
+      "bg2": "Custom processes",
+      "bg3": "High detail estimating"
+    },
+    "data": {
+      "label": "Data Integrity",
+      "bg1": "Simple, basic setup",
+      "bg2": "Complex data & setup",
+      "bg3": "Extremely clean & configured"
+    },
+    "integrations": {
+      "label": "Integration Reqs",
+      "bg1": "None",
+      "bg2": "Expects connectivity",
+      "bg3": "Real-time multi-system"
+    },
+    "sales": {
+      "label": "Sales Process",
+      "bg1": "Simple, low-touch",
+      "bg2": "Semi-custom / OYL",
+      "bg3": "Rigid, defined, competitive"
+    },
+    "org": {
+      "label": "Org Structure",
+      "bg1": "Single decision maker",
+      "bg2": "In-house ops, multi",
+      "bg3": "Complex, multi-location"
+    },
+    "architecture": {
+      "label": "Architecture",
+      "bg1": "<5 structural options",
+      "bg2": "10+ structural opts",
+      "bg3": "50+ plan library"
+    },
+    "marketing": {
+      "label": "Marketing",
+      "bg1": "2D static, manual",
+      "bg2": "3D investments, modern",
+      "bg3": "3D, high-expectation staff"
+    },
+    "estimating": {
+      "label": "Estimating",
+      "bg1": "Mostly turn-key",
+      "bg2": "<50% turn-key, unitized",
+      "bg3": "<10% turn-key, vendor-specific"
+    },
+    "it": {
+      "label": "IT Complexity",
+      "bg1": "Low, no integrations",
+      "bg2": "Moderate-high, auto",
+      "bg3": "Enterprise, deep integrations"
+    },
+    "mindset": {
+      "label": "Mindset",
+      "bg1": "Open to defaults",
+      "bg2": "Automate current",
+      "bg3": "Automate current processes"
+    }
+  },
+
+  "icpQuestions": [
+    {
+      "id": "planLibrary",
+      "question": "Plan library or design from scratch?",
+      "ideal": "Plan library",
+      "field": "plan_library"
+    },
+    {
+      "id": "inHouseAD",
+      "question": "In-house A&D?",
+      "ideal": "Yes",
+      "field": "in_house_ad"
+    },
+    {
+      "id": "communities",
+      "question": "Build in communities?",
+      "ideal": "Yes",
+      "field": "communities"
+    },
+    {
+      "id": "challenges",
+      "question": "Key business challenges?",
+      "ideal": "Long cycle time, automate, scale, errors, sell online",
+      "field": null,
+      "options": ["Cycle time", "Automate", "Scale/grow", "Errors/manual", "Sell online", "Unknown"],
+      "multiSelect": true
+    }
+  ],
+
+  "exampleQuestions": [
+    {
+      "label": "Most recent activity",
+      "question": "What was the most recent activity we had with this account?"
+    },
+    {
+      "label": "Current status",
+      "question": "What is the current status of this deal?"
+    },
+    {
+      "label": "What are we missing",
+      "question": "What are we missing or what gaps exist in our knowledge of this account?"
+    },
+    {
+      "label": "Recommended next steps",
+      "question": "What are your recommended next steps for moving this deal forward?"
+    },
+    {
+      "label": "Prepare for a call",
+      "question": "__PREP_CALL__",
+      "icon": "📋"
+    }
+  ],
+
+  "prepCallForm": {
+    "fields": [
+      {
+        "key": "attendees",
+        "label": "Who are the attendees?",
+        "placeholder": "e.g. VP of Sales, IT Director, CEO…"
+      },
+      {
+        "key": "purpose",
+        "label": "What is the purpose of the meeting?",
+        "placeholder": "e.g. Demo, discovery, renewal discussion…"
+      },
+      {
+        "key": "gaps",
+        "label": "What are the current gaps in the sales process?",
+        "placeholder": "e.g. No champion identified, pricing not discussed…"
+      },
+      {
+        "key": "risks",
+        "label": "What are the risks?",
+        "placeholder": "e.g. Competitive threat, budget freeze, long procurement…"
+      }
+    ]
+  },
+
+  "reportSections": [
+    { "key": "executive_summary",   "title": "Executive Summary",            "icon": "📋" },
+    { "key": "icp_assessment",      "title": "ICP Assessment",               "icon": "🎯" },
+    { "key": "bg_recommendation",   "title": "Builder Group Recommendation", "icon": "🏗️" },
+    { "key": "opportunities",       "title": "Value Opportunities",          "icon": "💡", "type": "list" },
+    { "key": "rtb_narrative",       "title": "Right to Believe",             "icon": "🤝" },
+    { "key": "risks",               "title": "Risks & Unknowns",             "icon": "⚠️", "type": "list" },
+    { "key": "discovery_questions", "title": "Discovery Questions",          "icon": "🔍", "type": "list" },
+    { "key": "recommended_next_steps", "title": "Recommended Next Steps",    "icon": "✅", "type": "list" }
+  ],
+
+  "researchPhases": [
+    {
+      "id": "website",
+      "label": "Fetching builder website",
+      "systemPrompt": "You are a homebuilder research analyst. Extract: company name, what they do, where they build, volume/homes per year, home product, team/leadership, technology. Return a clear paragraph starting with the confirmed company name.",
+      "useSearch": true
+    },
+    {
+      "id": "volume",
+      "label": "Volume & scale data",
+      "promptTemplate": "Find homes per year, annual closings, permit data for the homebuilder at {url}. Check Builder 100, Builder 200, Housing Giants, ProBuilder.",
+      "systemPrompt": "You are a homebuilder research analyst. Find volume/scale data. Report only facts.",
+      "useSearch": true
+    },
+    {
+      "id": "leadership",
+      "label": "Leadership & org structure",
+      "promptTemplate": "Find leadership team, executives, organizational structure for the homebuilder at {url}. Look for CEO, President, VP roles.",
+      "systemPrompt": "You are a homebuilder research analyst. Find leadership data.",
+      "useSearch": true
+    },
+    {
+      "id": "tech",
+      "label": "Technology, news & operations",
+      "promptTemplate": "Find technology signals, software, ERP, recent news, partnerships for the homebuilder at {url}. Check job postings.",
+      "systemPrompt": "You are a homebuilder research analyst. Find technology and news signals.",
+      "useSearch": true
+    },
+    {
+      "id": "product",
+      "label": "Product & sales approach",
+      "promptTemplate": "Find floor plans, communities, structural options, price ranges, sales approach for the homebuilder at {url}.",
+      "systemPrompt": "You are a homebuilder research analyst. Find product and sales details.",
+      "useSearch": true
+    },
+    {
+      "id": "synthesis",
+      "label": "Synthesizing all findings",
+      "useSearch": false
+    }
+  ],
+
+  "synthesisOutputSchema": {
+    "company": "",
+    "summary": "",
+    "hpy_estimate": null,
+    "hpy_confidence": "",
+    "hpy_source": "",
+    "geography": "",
+    "leadership": "",
+    "news": "",
+    "tech_signals": "",
+    "home_types": "",
+    "avg_home_price": null,
+    "plan_count_estimate": null,
+    "communities_count": null,
+    "plan_library": null,
+    "in_house_ad": null,
+    "communities": null,
+    "structural_options": null,
+    "sales_approach": null,
+    "marketing_sophistication": null,
+    "org_complexity": null,
+    "is_homebuilder": true,
+    "website": "",
+    "evidence_gaps": [],
+    "bg_signals": ""
+  },
+
+  "model": "claude-sonnet-4-6",
+
+  "evergreeneReport": {
+    "customer": "Evergreene Homes",
+    "reportDate": "March 11, 2026",
+    "phase": "Align",
+    "riskLevel": "MODERATE RISK",
+    "targetLaunch": "July 2026",
+    "sources": ["Notion", "Slack", "Google Drive"],
+
+    "kpis": [
+      {
+        "label": "Current Phase",
+        "value": "Align",
+        "note": "Active client list confirmed",
+        "color": "#f59e0b"
+      },
+      {
+        "label": "Target Launch",
+        "value": "July 2026",
+        "note": "~4 months out",
+        "color": "#22c55e"
+      },
+      {
+        "label": "Plans in Scope",
+        "value": "7 Plans",
+        "note": "Chapman · Ellise · Millwright · Addison · Robey · Banyan · Country Home",
+        "color": "#3b82f6"
+      },
+      {
+        "label": "Open Blockers",
+        "value": 3,
+        "note": "Redlines pending · structural ref · kitchen catalog",
+        "color": "#ef4444"
+      },
+      {
+        "label": "Last Ext. Meeting",
+        "value": "Mar 4–5",
+        "note": "Weekly cadence ✅ maintained",
+        "color": "#8b5cf6"
+      },
+      {
+        "label": "Palette Status",
+        "value": "11 Palettes",
+        "note": "DCM only — updated Mar 6",
+        "color": "#f59e0b"
+      }
+    ],
+
+    "risks": [
+      {
+        "title": "July 2026 Launch Under Pressure",
+        "severity": "high",
+        "description": "Ellise redline timeline is unconfirmed, Country Home needs urgent support, and the kitchen cabinet catalog has not been supplied by EVG. With ~4 months to launch, unresolved dependencies risk compressing the delivery schedule for all 6 homes.",
+        "context": "Greg Moore confirmed the internal goal on Feb 27: goal of wrapping up these first 6 houses for the July launch completed by the Architecture team so they can be fully over with Estimate and Config side. He also indicated a potential house-by-house handover approach (Chapman first, then Ellise, etc.) — meaning Chapman's readiness is the immediate critical path.",
+        "recommendedAction": "Set a firm redline return SLA with EVG (e.g. 5 business days per deliverable) and surface it at the next weekly meeting. Escalate the Country Home meeting request this week — assign an owner and confirm the date. Follow up with Greg Moore on the kitchen cabinet catalog list with a specific deadline.",
+        "slackChannel": "ext-evergreene-homes-higharc",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "slackMessages": [
+          {
+            "author": "Greg Moore",
+            "date": "Feb 27, 2026",
+            "text": "On Tuesday, I'd also like to get an update on the status of the masterfile plan permit set completion dates. We had an internal goal of wrapping up these first 6 houses for the July launch completed by the Architecture team so they can be fully over with Estimate and Config side. However my approach may be more house by house hand over to the other departments, i.e. Chapman, Ellise, etc..."
+          },
+          {
+            "author": "Katie White",
+            "date": "Feb 27 (thread)",
+            "text": "Sounds good, Greg. @Jacob Alicea let's discuss this."
+          },
+          {
+            "author": "Jacob Alicea",
+            "date": "Feb 27 (thread)",
+            "text": "Hey @Greg Moore, I've added dates for the Master Set files for each of the remaining models for launch into the Config Model Review Doc."
+          }
+        ]
+      },
+      {
+        "title": "EVG Team Training Gap — Blocks Chapman Handover",
+        "severity": "high",
+        "description": "EVG's internal team (Christiana, Ramon) still needs the DCM → Masterfile → Sandbox workflow training before Chapman can be formally handed over. No training date has been scheduled for this specific workflow yet.",
+        "recommendedAction": "Schedule a dedicated DCM → Masterfile → Sandbox training session in the next 1–2 weeks. Pair this with the Chapman handover signature workflow so both items can be closed in the same session. Add it as an agenda item to the next weekly meeting.",
+        "notionLinks": [
+          { "label": "EVG Dashboard", "url": "https://www.notion.so/20fe5ccdec3080748367f386f565b1b9" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "slackMessages": [
+          {
+            "author": "Greg Moore",
+            "date": "Feb 27, 2026",
+            "text": "@Jacob Alicea @Katie White @Kelly Giarmo — Our internal team (@Christiana @Ramon Balderas) needs a tutorial on how to move a model to masterfile and into a market (DCM) then into a community (Sandbox)."
+          },
+          {
+            "author": "Greg Moore",
+            "date": "Feb 27, 2026",
+            "text": "We also had a question: We were looking at the Chapman showroom via the community/Sandbox and the organization of the options are, frankly, messed up. This brings up 2 questions: 1. how do you adjust the options in config? 2. Is there history to see when and who is modifying it?"
+          },
+          {
+            "author": "Christiana Johnson",
+            "date": "Feb 27 (thread)",
+            "text": "Yes, that would be VERY helpful please!!!"
+          }
+        ]
+      },
+      {
+        "title": "Showroom Performance Issue — Unresolved Since Oct 2025",
+        "severity": "medium",
+        "description": "Showroom lag was noted in the Product Needs database at account open (Oct 2025) and remains unaddressed. This may affect EVG's ability to demo homes to buyers leading up to launch.",
+        "recommendedAction": "Escalate to the Product team with a formal ticket if one hasn't been filed. Set an expectation with EVG on resolution timeline. Confirm whether this is platform-wide or account-specific, and if account-specific, prioritize before July go-live.",
+        "notionLinks": [
+          { "label": "Product Needs — Evergreene", "url": "https://www.notion.so/29be5ccdec308028bef6dcb8f2334912" }
+        ]
+      },
+      {
+        "title": "Structural Reference Drawings Still In Progress",
+        "severity": "medium",
+        "description": "Foundation assemblies targeting Mar 20 completion. Until validated, estimate data for Chapman and subsequent models may be incomplete, creating downstream risk for the Config and Estimate teams.",
+        "recommendedAction": "Confirm Mar 20 target is still realistic at the next internal sync. If at risk, communicate revised timeline to EVG proactively. Ensure Chapman model validation includes a structural review sign-off before formal handover.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "title": "Engagement & Communication — Strong",
+        "severity": "low",
+        "description": "Weekly meetings are being maintained consistently. Deliverables for Chapman, Ellise, Addison, and Millwright have all shipped on schedule. Both Slack channels are highly active with strong two-way engagement from both teams.",
+        "recommendedAction": "Maintain the weekly cadence and continue proactive delivery updates via the external Slack channel. Use the momentum of recently shipped deliverables (Addison, Millwright) to reinforce trust and push for faster redline turnaround from EVG.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" },
+          { "label": "#evergreene_higharc_internal", "url": "https://higharc.slack.com/archives/C0AFLDZKGCB" }
+        ]
+      }
+    ],
+
+    "plans": [
+      {
+        "name": "Chapman",
+        "status": "nearComplete",
+        "statusLabel": "Near Complete",
+        "statusColor": "green",
+        "summary": "Ready for model handover to the EVG team. Pending CDM access grant and signature approval (Config Model Review doc linked, awaiting EVG sign-off). Showroom option organization flagged as disorganized by Greg Moore — needs cleanup before handover is complete.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "driveLinks": [
+          { "label": "Config Model Review Doc", "url": "https://docs.google.com/document/d/1E9Bvm5wnV0vK_Yt7dE5tjxHeVZtAdFSTtfiRk5PoeDU/edit" }
+        ]
+      },
+      {
+        "name": "Ellise",
+        "status": "inReview",
+        "statusLabel": "In Review",
+        "statusColor": "yellow",
+        "summary": "1st Master Set CDs delivered Feb 20. Redline ETA from EVG still unconfirmed — blocking internal scheduling. Integral garage option modeling complete; CD work deferred. Elevation G integral option confirmed structurally same as H.",
+        "notionLinks": [
+          { "label": "Collaboration Log", "url": "https://www.notion.so/20fe5ccdec3081de9022d5cdbd202ec1" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "name": "Millwright",
+        "status": "delivered",
+        "statusLabel": "Delivered",
+        "statusColor": "blue",
+        "summary": "1st Master Set CDs delivered Mar 6. Known conflict on Elevation B/F: window rough opening height conflicts with roof; Elevation F trim extends through window bottom. CDM Live Plans updates shipped Mar 2.",
+        "notionLinks": [
+          { "label": "CDM Live Plans Updates — Millwright", "url": "https://www.notion.so/317e5ccdec3080f7b110ff0888769cbf" }
+        ],
+        "slackLinks": [
+          { "label": "#evergreene_higharc_internal", "url": "https://higharc.slack.com/archives/C0AFLDZKGCB" }
+        ]
+      },
+      {
+        "name": "Addison",
+        "status": "delivered",
+        "statusLabel": "Delivered",
+        "statusColor": "blue",
+        "summary": "1st Master Set CDs delivered Mar 6 alongside Millwright. Integral garage option modeling not started — deferred. EVG advised to skip commenting on template/standard changes already discussed to speed up review.",
+        "notionLinks": [
+          { "label": "Collaboration Log", "url": "https://www.notion.so/20fe5ccdec3081de9022d5cdbd202ec1" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "name": "Robey",
+        "status": "upcomingReview",
+        "statusLabel": "Upcoming Review",
+        "statusColor": "yellow",
+        "summary": "EVG team (Christiana) has made substantial internal progress. Higharc review requested week of Mar 16–20. EVG must complete internal QC checklist before delivery. Feedback to be discussed at Mar 25 training session.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "name": "Banyan",
+        "status": "deprioritized",
+        "statusLabel": "Deprioritized",
+        "statusColor": "gray",
+        "summary": "Redlines received from Patrick Bebout (Feb 25) posted to Google Doc. Deliberately deprioritized — not part of the first 6-home July launch batch. Will be scheduled when higher-priority items clear.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "name": "Country Home",
+        "status": "needsAttention",
+        "statusLabel": "Needs Attention",
+        "statusColor": "red",
+        "summary": "Ramon Balderas reached out Mar 7 requesting urgent support — meeting not yet confirmed. Known issues: basement × Level 01 stair linework/layer conflict, front porch casework details and column casework questions from Mar 5 training. 36×48 title block template incomplete — blocking consultant PDF deliveries.",
+        "notionLinks": [
+          { "label": "EVG Weekly Training 3/4–3/5", "url": "https://www.notion.so/317e5ccdec3080ab8e92dd9f3fc2a41f" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      }
+    ],
+
+    "openItems": [
+      {
+        "title": "Ellise Redlines from EVG — No ETA",
+        "priority": "high",
+        "description": "No confirmed timeline from EVG for returning Ellise redlines. Blocking internal scheduling and could compress the path to July launch.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ]
+      },
+      {
+        "title": "Country Home Urgent Support",
+        "priority": "high",
+        "description": "Ramon Balderas messaged Mar 7 requesting a meeting. Jacob Alicea responded Mar 11 asking for clarification on needed support. Ramon's follow-up reveals the 36×48 title block template is incomplete — consultants can't use the PDFs (missing door schedules, sheet details). Meeting still unconfirmed.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "notionLinks": [
+          { "label": "EVG Weekly Training 3/4–3/5", "url": "https://www.notion.so/317e5ccdec3080ab8e92dd9f3fc2a41f" }
+        ]
+      },
+      {
+        "title": "DCM → Masterfile → Sandbox Training for EVG",
+        "priority": "high",
+        "description": "Greg Moore requested a tutorial for Christiana and Ramon (Feb 27) on the full Masterfile → DCM → Sandbox workflow. Christiana confirmed she wants it urgently. Without this, Chapman cannot be formally handed over.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "notionLinks": [
+          { "label": "EVG Dashboard", "url": "https://www.notion.so/20fe5ccdec3080748367f386f565b1b9" }
+        ]
+      },
+      {
+        "title": "Robey Model Higharc Review — Week of Mar 16–20",
+        "priority": "medium",
+        "description": "EVG-built Robey model needs Higharc internal QC. EVG must deliver model with internal QC checklist completed. Higharc will redline and discuss at the Mar 25 training session.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "title": "Check Set Template — Target Week of Mar 23–27",
+        "priority": "medium",
+        "description": "First deliverable for the Check Set Template targeted for the week of Mar 23–27. New deliverable type being introduced into the EVG workflow.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ]
+      },
+      {
+        "title": "Structural Reference Drawings in CDM — Target Mar 20",
+        "priority": "medium",
+        "description": "Foundation assemblies being added to CDM based on Chapman structural drawings. Higharc to support EVG on subsequent models post-delivery. Target: Mar 20.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ],
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "title": "Kitchen Cabinet Full Catalog List — Pending from EVG",
+        "priority": "medium",
+        "description": "Higharc still needs a full kitchen cabinet catalog list from EVG before incorporating actual box sizes. Greg Moore flagged as a potential launch impact item — no update received.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ],
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ]
+      },
+      {
+        "title": "36×48 CD Template Redlines Incorporation",
+        "priority": "low",
+        "description": "Redlines received from Ramon on Feb 25. Will be incorporated but may be delayed in favor of launch-critical items. No hard deadline set. Note: Ramon's Mar 11 follow-up on Country Home also references the 36×48 title block as currently incomplete for consultant use — this may need to be re-prioritized.",
+        "slackLinks": [
+          { "label": "#ext-evergreene-homes-higharc", "url": "https://higharc.slack.com/archives/C0919N6LXQF" }
+        ]
+      },
+      {
+        "title": "Addison Integral Garage Option — Not Started",
+        "priority": "low",
+        "description": "Modeling has not started. Will be worked on after higher-priority items are resolved. Not a July launch dependency.",
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ]
+      },
+      {
+        "title": "Plumbing Drops — Internal Investigation",
+        "priority": "low",
+        "description": "Investigating what is possible internally to reduce manual work for EVG. Concern: back wall depth differences (3½\" vs 5½\") affecting plumbing drop positions. Thiago flagged this may work well for some cases but create inconsistencies for others, and that manual addition may be the most accurate approach for now.",
+        "slackLinks": [
+          { "label": "#evergreene_higharc_internal", "url": "https://higharc.slack.com/archives/C0AFLDZKGCB" }
+        ],
+        "notionLinks": [
+          { "label": "EVG Weekly Update 3/3", "url": "https://www.notion.so/317e5ccdec3080e790fbd39a799e8a7a" }
+        ]
+      }
+    ],
+
+    "timeline": {
+      "past": [
+        {
+          "date": "Jun 16, 2025",
+          "status": "blue",
+          "description": "External Slack channel #ext-evergreene-homes-higharc created — formal collaboration begins."
+        },
+        {
+          "date": "Oct 29, 2025",
+          "status": "blue",
+          "description": "Account opened in Notion. Pod: Builder's Backbone assigned. Showroom lag issue noted early."
+        },
+        {
+          "date": "Dec 8, 2025",
+          "status": "blue",
+          "description": "Dashboard confirmed active — Dropbox, Google Drive, Toggl, Planhat all linked."
+        },
+        {
+          "date": "Dec 10, 2025",
+          "status": "yellow",
+          "description": "First batch of Exterior Color Palettes (15) requested."
+        },
+        {
+          "date": "Feb 17, 2026",
+          "status": "green",
+          "description": "Implementation Framework V3 shared with EVG team and reviewed live on call."
+        },
+        {
+          "date": "Feb 20, 2026",
+          "status": "green",
+          "description": "Ellise 1st Master Set CDs delivered to EVG team."
+        },
+        {
+          "date": "Feb 24–25, 2026",
+          "status": "green",
+          "description": "CDM + option training held. 36×48 CD template redlines received. Banyan II review comments posted."
+        },
+        {
+          "date": "Feb 27, 2026",
+          "status": "yellow",
+          "description": "Greg Moore flags Chapman Showroom disorganization and requests DCM → Sandbox training for EVG team. Christiana confirms she urgently wants the training."
+        },
+        {
+          "date": "Mar 2, 2026",
+          "status": "blue",
+          "description": "CDM Live Plans updates (Millwright) shipped. Structural sets for first 6 houses received from Christiana."
+        },
+        {
+          "date": "Mar 3–5, 2026",
+          "status": "green",
+          "description": "Weekly training sessions delivered. Manual CD annotation workflow demo completed. Documentation distributed. Internal QC and sheet template work in progress by Rennan & Thiago."
+        },
+        {
+          "date": "Mar 6, 2026",
+          "status": "green",
+          "description": "Addison & Millwright 1st Master Set CDs delivered. 11 Palettes updated (DCM only)."
+        },
+        {
+          "date": "Mar 7, 2026",
+          "status": "red",
+          "description": "Ramon requests urgent Country Home meeting for following week. ⚠️ Still unscheduled."
+        },
+        {
+          "date": "Mar 11, 2026",
+          "status": "yellow",
+          "description": "Today — Jacob asks Ramon to clarify Country Home support needs. Ramon responds: 36×48 title block incomplete, blocking consultant PDF deliveries. Thread active."
+        }
+      ],
+      "upcoming": [
+        {
+          "date": "Mar 16–20",
+          "status": "yellow",
+          "description": "Robey model Higharc review window — EVG must complete internal QC checklist before delivery."
+        },
+        {
+          "date": "Mar 20",
+          "status": "yellow",
+          "description": "Target: Structural reference drawings added to CDM and validated in Chapman model."
+        },
+        {
+          "date": "Mar 23–27",
+          "status": "yellow",
+          "description": "Target: Check Set Template first deliverable."
+        },
+        {
+          "date": "Mar 25",
+          "status": "blue",
+          "description": "Next scheduled training session with EVG team — Robey redline review + Q&A."
+        },
+        {
+          "date": "July 2026",
+          "status": "green",
+          "description": "Target Launch. First 6 homes completed by Architecture, handed to Estimate & Config."
+        }
+      ]
+    }
+  }
+}
